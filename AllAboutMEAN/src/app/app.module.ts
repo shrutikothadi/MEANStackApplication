@@ -2,21 +2,27 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import {  HttpClientModule } from '@angular/common/http';
-import { AgmCoreModule } from '@agm/core';
-import { AngularRaveModule } from 'angular-rave';
+import { HomeComponent } from './home/home.component';
+import { AppRoutingModule } from './app-routing.module';
+import { AngularComponent } from './angular/angular.component';
+import { ExpressComponent } from './express/express.component';
+import { NodeComponent } from './node/node.component';
+import { MongoDBComponent } from './mongo-db/mongo-db.component';
+import { MiscellaneousComponent } from './miscellaneous/miscellaneous.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    AngularComponent,
+    ExpressComponent,
+    NodeComponent,
+    MongoDBComponent,
+    MiscellaneousComponent
   ],
   imports: [
-    BrowserModule,
-    AngularRaveModule,
-    HttpClientModule,
-    AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyCXme80IsTCbI6EyeotugTsfzsWSDmvyFw'
-    })
+    BrowserModule,  
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

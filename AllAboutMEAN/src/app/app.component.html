@@ -1,47 +1,27 @@
-<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    
-  <li class="nav-item">
-    <a class="navbar-brand" href="#" style="color: white"><img src="../assets/mean.jpg" width="200" class="img-rounded"/></a>
-  </li>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        
-        <li class="nav-item" >
-          <a class="nav-link" href="#">MongoDB</a>
-        </li>
-      
-        <hr/>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Express JS</a>
-        </li>
-        <hr/>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Angular</a>
-        </li>
-        <hr/>
-        <li class="nav-item">
-          <a class="nav-link">Node JS</a>
-        </li>
-        
-      </ul>
-    </div>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <a class="nav-item" routerLink=""><img src="../assets/mean.jpg" width="200" /></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-</nav> -->
-<div class="navbar">
-  
-    <a href="#"><img src="../assets/mean.jpg" width="200" class="img-rounded"/></a><span class="line"></span>
-    <a href="#" >MongoDB</a>
-    <a href="#">Express JS</a><span class="line"></span>
-    <a href="#">Angular</a><span class="line"></span>
-    <a href="#">Node JS</a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      <li class="nav-item col-md-5">
+        <a class="nav-link" routerLink="angular">Angular</a> 
+      </li>
+      <li class="nav-item col-md-5">
+        <a class="nav-link" routerLink="express">Express</a>
+      </li>
+      <li class="nav-item col-md-5"> 
+        <a class="nav-link" routerLink="node">Node</a>
+      </li>
+      <li class="nav-item col-md-5">
+        <a class="nav-link" routerLink="mongodb">MongoDB</a>
+      </li>
+      <li class="nav-item col-md-5">
+        <a class="nav-link" routerLink="miscellaneous">Miscellaneous</a>
+      </li>
+    </ul>
   </div>
-
-  <div>
-
-  </div>
-  <footer>
-    <div>Footer Element</div>
-  </footer>
+</nav>
+<router-outlet></router-outlet>
